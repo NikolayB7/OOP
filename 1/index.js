@@ -45,5 +45,7 @@ student(user){
 
 
 /*
+https://youtu.be/ZmH262CgLsM?t=2401
+
 Полиморфизм
 */
