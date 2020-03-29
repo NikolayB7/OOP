@@ -29,11 +29,13 @@ let user = {
     role: ''
     //методы
 
+    /*
     // getCourses(
         if(admin)...
         if(user)...
         if(guest)...
     )
+    */
 
 };
 
@@ -78,17 +80,17 @@ https://youtu.be/ZmH262CgLsM?t=2998
 Инкапсуляция
 
 */
-
+/*
 course{
     title: '',
     url: '',
     price: 20.00, //private,protected ...
     getPrice: { return price;}
 }
-
+*/
 
 course.price    //!!!!
-course.getPrice()!!!!! //18$
+// course.getPrice()!!!!! //18$
 
 
 
