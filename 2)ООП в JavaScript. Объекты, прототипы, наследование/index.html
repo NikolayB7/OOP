@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+// https://www.youtube.com/watch?v=rWfZAeEnn2I&list=PLM7wFzahDYnHyRpmcSGOptXan08CNb9nh&index=3
+
+let a = {
+    text:'Hello',
+    color:'red',
+    bold: true,
+    show: function(){
+        console.log(this.color);
+        // console.log(this.fontSize);
+        
+    },
+
+
+};
+
+let b ={
+    fontSize:'24px',
+    __proto__:a         //наследуем обьект a
+}
+
+
+
+let c = {
+    fontFamily: 'Roboto',
+    __proto__ : b
+}
+
+console.log(a);
+
+b.text = 'one'
+
+// console.log(b.fontSize);
+// console.log(b.text);
+// console.log(a.text);
+
+b.color = 'green';
+b.show();
+a.show();
+
+console.log(c);
+console.log(c.bold);
+
+//Пртототипом может выступать только обьект, при изменении типа данных например b=5, при вызове c будет undefined
+
+// a->b->c
+
+//Для определенрия к кактому обьекту принадлежит свойство используй hasOwnProperty()
+
+console.log('------------------------------');
+
+console.log(c.hasOwnProperty('fontFamily'));
+console.log(c.hasOwnProperty('bold'));
+
+
+
+    </script>
+</body>
+</html>
